@@ -1,0 +1,1 @@
+python main.py --root_dir E:/Prasad/Projects/ml_practice/ --log_level DEBUG

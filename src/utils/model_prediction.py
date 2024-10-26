@@ -18,6 +18,19 @@ with open("model/model.pkl", "rb") as f:
 
 # Function to predict on the test data using the saved model
 def model_predict(model_obj, X_test, y_test):
+    """ "
+    This function predicts on the test data using the model object
+
+    Input :
+    model_obj : Model object used to predict on the test data
+    X_test : Features of the testing data
+    y_test : Labels of the testing data
+
+    Output :
+    The output is the test data with the predicted values
+
+    """
+
     y_test["pred_prob"] = model_obj.predict(X_test)
     return y_test
 

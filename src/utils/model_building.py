@@ -15,6 +15,17 @@ y_train = pd.read_csv("data/final/train/y_train.csv")
 
 # Function to fit the model
 def model_fit(X_train, y_train):
+    """
+    This function takes the features and lables as input builds a logistic regression model
+
+    Input :
+    X_train : Features of the training data
+    y_train : Labels of the training data
+
+    Output :
+    The output is a model object
+
+    """
     model = LogisticRegression()
     model.fit(X_train, y_train)
     return model

@@ -16,6 +16,18 @@ y = iris[["Species"]]
 
 # Function to divide the data in train and test
 def data_split(X, y):
+    """
+    This function takes the entire features and lables data as input and divide the into train an test data
+
+    Input :
+    X : Features of the data
+    y : Labels of the data
+
+    Output :
+    The entire features and labels data is divided into training data and testing data
+
+    """
+
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.4, random_state=5
     )

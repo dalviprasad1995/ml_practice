@@ -18,7 +18,7 @@ with open("model/model.pkl", "rb") as f:
 
 # Function to predict on the test data using the saved model
 def model_predict(model_obj, X_test, y_test):
-    """ "
+    """
     This function predicts on the test data using the model object
 
     Input :
